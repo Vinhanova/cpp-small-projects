@@ -1,14 +1,24 @@
-//
-//  main.cpp
-//  Calculator
-//
-//  Created by Tiago Vinhanova on 16/04/2023.
-//
-
 #include <iostream>
+#include "Calculator.hpp"
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    Calculator cal = Calculator();
+    double n1 = 0.0;
+    double n2 = 0.0;
+    char op = '+';
+    
+    cout << "YOOOOOO!\n";
+    cout << "Write a calculation:\n";
+    
+    cin >> n1 >> op >> n2;
+    
+    double res = cal.Calculate(n1, op, n2);
+    
+    cout << res << endl;
+    
+    cout << "YOO2";
+    
     return 0;
 }
